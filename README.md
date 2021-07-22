@@ -36,20 +36,20 @@ POST http://localhost:8080/employee
 
 DELETE http://localhost:8080/employee/{emplyeeId}
 
-## Get Employees
-### Get All Employees
+### Get Employees
+#### Get- All Employees
 
 GET http://localhost:8080/employee
 
-### Get Employees filter by name
+#### Get- Employees filter by name
 
 GET http://localhost:8080/employee?name=employeeName
 
-## Get Employees filter by position
+#### Get- Employees filter by position
 
 GET http://localhost:8080/employee?position=positionName
 
-##Get Positions
+### Get Positions
 
 GET http://localhost:8080/positions
 
