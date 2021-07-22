@@ -7,7 +7,7 @@ import java.util.List;
 
 public class PositionMapper {
 
-    public PositionView getView(Position position, List<Employee> employees) {
+    public PositionView getPositionView(Position position, List<Employee> employees) {
         PositionView view = new PositionView();
         view.setPositionId(position.getId());
         view.setName(position.getName());

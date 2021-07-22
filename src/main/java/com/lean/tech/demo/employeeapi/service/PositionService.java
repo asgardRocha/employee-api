@@ -27,7 +27,7 @@ public class PositionService implements PositionInterface {
         List<PositionView> views = new ArrayList<>();
         repository.findAll().forEach(position -> {
             List<Employee> employees = employeeInterface.getAll(Optional.empty(), Optional.of(position.getName()));
-            views.add(mapper.getView(position, employees));
+            views.add(mapper.getPositionView(position, employees));
         });
         return views;
     }
